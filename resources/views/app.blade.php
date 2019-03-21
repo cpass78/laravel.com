@@ -12,20 +12,20 @@
         <link rel="canonical" href="{{ url($canonical) }}" />
     @endif
     <link href='https://fonts.googleapis.com/css?family=Miriam+Libre:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="{{ elixir('assets/css/laravel.css') }}">
+    <link rel="stylesheet" href="{{ mix('/assets/css/laravel.css') }}">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css">
     <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/7737514/7707592/css/fonts.css" />
     <link rel="apple-touch-icon" href="/favicon.png">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.26/vue.min.js"></script>
 </head>
 <body class="@yield('body-class', 'docs') language-php">
     <div class="laracon-banner">
         <!-- <img src="/assets/svg/laracon-logo.svg" alt=""> -->
-        Join Laracon EU in Amsterdam on August 29th - 31st. Tickets are now available!
-        <a href="https://laracon.eu/2018">Get your ticket today!</a>
 
-<!--         Spark 6.0, the official SaaS starter-kit built on Laravel, is now available!
-        <a href="https://spark.laravel.com">Get your copy today!</a> -->
+        Laracon EU tickets are now available!
+        <a href="https://laracon.eu">Get your tickets today!</a>
+
+<!--         Laracon US 2019 tickets are now available!
+        <a href="https://www.eventbrite.com/e/laracon-us-2019-tickets-51733090065">Get your tickets today!</a> -->
     </div>
     <span class="overlay"></span>
 
@@ -37,10 +37,10 @@
 
         <div class="search nav-block invisible">
             {!! svg('search') !!}
-            <input placeholder="search" type="text" v-model="search" id="search-input" v-on:blur="reset" />
+            <input placeholder="search" type="text" id="search-input" aria-label="search"/>
         </div>
 
-        <ul class="main-nav" v-if="! search">
+        <ul class="main-nav">
             @include('partials.main-nav')
         </ul>
 
@@ -76,7 +76,7 @@
 
     @include('partials.algolia_template')
 
-    <script src="{{ elixir('assets/js/laravel.js') }}"></script>
+    <script src="{{ mix('/assets/js/laravel.js') }}"></script>
     <script src="/assets/js/viewport-units-buggyfill.js"></script>
     <script>window.viewportUnitsBuggyfill.init();</script>
     <script>

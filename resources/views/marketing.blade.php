@@ -62,12 +62,12 @@ class Idea extends Eloquent
                 </div>
                 <p>Laravel Horizon provides a beautiful dashboard and code-driven configuration for your Redis queues.</p>
             </a>
-            <a href="/docs/dusk" class="callout minimal third">
+            <a href="https://nova.laravel.com" class="callout minimal third">
                 <div class="callout-head">
-                    <div class="callout-title">Laravel Dusk</div>
-                    <div class="callout-icon">{!! svg('logo-dusk')!!}</div>
+                    <div class="callout-title">Laravel Nova</div>
+                    <div class="callout-icon"><?php echo svg('laravel-nova'); ?></div>
                 </div>
-                <p>Laravel Dusk provides an expressive, easy-to-use browser automation and testing API. You'll love it.</p>
+                <p>Laravel Nova is a beautiful administration panel designed by the creator of Laravel.</p>
             </a>
             <a href="/docs/broadcasting" class="callout minimal third">
                 <div class="callout-head">
@@ -230,7 +230,7 @@ Route::get('/user/{user}', function(App\User $user)
                 <span class="text">And so much more!</span>
             </div>
             <div class="packages">
-                <div class="third">
+                <div class="package-row">
                     <div class="package">
                         <div class="icon">{!! svg('package') !!}</div>
                         <div class="content">
@@ -238,6 +238,23 @@ Route::get('/user/{user}', function(App\User $user)
                             <p>A Laravel development environment for Mac minimalists. No Vagrant, no Apache, no fuss.</p>
                         </div>
                     </div>
+                    <div class="package">
+                        <div class="icon">{!! svg('package') !!}</div>
+                        <div class="content">
+                            <a href="/docs/mix" class="package-title">Mix</a>
+                            <!-- <p>If you've ever been frustrated with Gulp and asset compilation, Elixir is for you.</p> -->
+                            <p>Laravel Mix makes front-end a breeze. Start using SASS and Webpack in minutes.</p>
+                        </div>
+                    </div>
+                    <div class="package">
+                        <div class="icon">{!! svg('package') !!}</div>
+                        <div class="content">
+                            <a href="https://lumen.laravel.com" class="package-title">Lumen</a>
+                            <p>If all you need is an API and lightning fast speed, try Lumen. It’s Laravel super-light.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="package-row">
                     <div class="package">
                         <div class="icon">{!! svg('package') !!}</div>
                         <div class="content">
@@ -250,16 +267,6 @@ Route::get('/user/{user}', function(App\User $user)
                             @endif
                         </div>
                     </div>
-                </div>
-                <div class="third">
-                    <div class="package">
-                        <div class="icon">{!! svg('package') !!}</div>
-                        <div class="content">
-                            <a href="/docs/mix" class="package-title">Mix</a>
-                            <!-- <p>If you've ever been frustrated with Gulp and asset compilation, Elixir is for you.</p> -->
-                            <p>Laravel Mix makes front-end a breeze. Start using SASS and Webpack in minutes.</p>
-                        </div>
-                    </div>
                     <div class="package">
                         <div class="icon">{!! svg('package') !!}</div>
                         <div class="content">
@@ -267,16 +274,7 @@ Route::get('/user/{user}', function(App\User $user)
                             <p>Powerful SaaS application scaffolding. Stop writing boilerplate & focus on your application.</p>
                         </div>
                     </div>
-                </div>
-                <div class="third">
                     <div class="package">
-                        <div class="icon">{!! svg('package') !!}</div>
-                        <div class="content">
-                            <a href="https://lumen.laravel.com" class="package-title">Lumen</a>
-                            <p>If all you need is an API and lightning fast speed, try Lumen. It’s Laravel super-light.</p>
-                        </div>
-                    </div>
-                    <div class="package last">
                         <div class="icon">{!! svg('package') !!}</div>
                         <div class="content">
                             <a href="https://statamic.com" class="package-title">Statamic</a>
